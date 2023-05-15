@@ -11,4 +11,5 @@ module com.example.tp1_javafx {
     exports com.example.partie2;
     exports com.example.partie3;
     exports com.example.exercice4;
+    exports com.example.exercice5Pacman;
 }
