@@ -8,4 +8,5 @@ module com.example.tp1_javafx {
     opens com.example.tp1_javafx to javafx.fxml;
     exports com.example.tp1_javafx;
     exports com.example.partie1;
+    exports com.example.partie2;
 }
