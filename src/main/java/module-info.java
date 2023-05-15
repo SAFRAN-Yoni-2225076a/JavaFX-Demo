@@ -9,4 +9,5 @@ module com.example.tp1_javafx {
     exports com.example.tp1_javafx;
     exports com.example.partie1;
     exports com.example.partie2;
+    exports com.example.partie3;
 }
