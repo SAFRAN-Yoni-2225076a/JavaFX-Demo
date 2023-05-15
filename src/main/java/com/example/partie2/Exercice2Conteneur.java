@@ -56,10 +56,12 @@ vbox.getChildren().add(jeu);
         // Ajout du conteneur à la scene
         Scene scene = new Scene(vbox);
 
+        jeu.setGridLinesVisible(true);
+
         // Ajout de la scene à la fenêtre et changement de ses paramètres (dimensions et titre)
         primaryStage.setScene( scene );
-        primaryStage.setWidth( 150 );
-        primaryStage.setHeight( 180 );
+        primaryStage.setWidth( 130 );
+        primaryStage.setHeight( 170 );
         primaryStage.setTitle("Tic Tac Toe");
         primaryStage.setResizable(false);
 
