@@ -8,7 +8,6 @@ import javafx.scene.chart.BarChart;
 import javafx.scene.chart.XYChart;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
 public class Exercice11Controller {
@@ -27,8 +26,10 @@ public class Exercice11Controller {
     @FXML
     public void initialize() {
         val = FXCollections.observableArrayList();
+        XYChart.Series<String, Number> name = new XYChart.Series<>(val);
         barChart.setTitle("Evolution of the number of Whales");
-        barChart.getData().add(new XYChart.Series<>(val));
+        name.setName(" Population par date de baleines");
+        barChart.getData().add(name);
     }
 
     @FXML
