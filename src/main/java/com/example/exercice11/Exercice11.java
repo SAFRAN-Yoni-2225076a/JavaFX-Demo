@@ -7,6 +7,7 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 public class Exercice11 extends Application {
+    // exercice 11
 
     @Override
     public void start(Stage primaryStage) throws Exception{
