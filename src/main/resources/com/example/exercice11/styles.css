@@ -1,0 +1,15 @@
+.my-chart .default-color0.chart-bar {
+    -fx-bar-fill: #ffffff;
+}
+
+.chart-legend{
+    -fx-border-color: #000001;
+}
+
+.text-field{
+    -fx-padding: 10px;
+}
+
+.root {
+    -fx-background-color: #afafaf;
+}

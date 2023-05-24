@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.BarChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+
+<BorderPane fx:controller="com.example.exercice11.Exercice11Controller" xmlns:fx="http://javafx.com/fxml">
+    <padding>
+        <Insets top="10" right="10" bottom="10" left="10" />
+    </padding>
+
+    <center>
+        <HBox alignment="CENTER" spacing="10">
+            <children>
+                <VBox alignment="BOTTOM_LEFT" spacing="10">
+                    <TextField fx:id="dateF" promptText="Date :"/>
+                    <TextField fx:id="populationF" promptText="Population :"/>
+                    <Button text="Nouvelle valeur" onAction="#addVal"/>
+                </VBox>
+            </children>
+        </HBox>
+    </center>
+
+    <left>
+        <BarChart fx:id="barChart" animated="false">
+            <xAxis>
+                <CategoryAxis label="Date" />
+            </xAxis>
+            <yAxis>
+                <NumberAxis label="Population" />
+            </yAxis>
+        </BarChart>
+    </left>
+</BorderPane>
